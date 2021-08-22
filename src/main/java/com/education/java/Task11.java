@@ -2,7 +2,7 @@ package com.education.java;
 
 import java.util.Scanner;
 
-public class Task2 {
+public class Task11 {
     public static void main(String[] args) {
         System.out.println("Enter any digit, please!");
 

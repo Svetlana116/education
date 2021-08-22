@@ -2,13 +2,12 @@ package com.education.java;
 
 public class Task7 {
     public static void main(String[] args) {
-        int a = 7;
-        int b = 4;
-
-        a += b;
-        b = a - b;
-        a = a - b;
-
-        System.out.println(a + ", " + b);
+        int x = 11;
+        double d = 0;
+        int y = 1;
+        for (int i = 0; i <= x; i++){
+            d += 1. / Math.pow(-2, i);
+        }
+        System.out.println(d);
     }
 }

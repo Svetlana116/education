@@ -5,16 +5,25 @@ import java.util.Scanner;
 public class Task9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter member");
-        int a = scanner.nextInt();
-        System.out.println("Enter Progression difference");
-        int d = scanner.nextInt();
-        System.out.println("Enter k member");
-        int n = scanner.nextInt();
+        System.out.println("Enter the coordinate X of the center of the circle ");
+        int cX = scanner.nextInt();
+        System.out.println("Enter the coordinate Y of the center of the circle ");
+        int cY = scanner.nextInt();
+        System.out.println("Enter the coordinates radius of the circle");
+        int r = scanner.nextInt();
+        System.out.println("enter the coordinate X of the point");
+        int x = scanner.nextInt();
+        System.out.println("enter the coordinate Y of the point");
+        int y = scanner.nextInt();
 
-        int f = d * (n - 1);
-        int c = a + f;
+        double r2 = Math.pow(r, 2);
+        double x1 = Math.pow((x - cX), 2);
+        double y1 = Math.pow((y - cY), 2);
 
-        System.out.println(c);
+        if (x1 + y1 <= r2){
+            System.out.println("The point is located in a circle");
+        } else {
+            System.out.println("The point is not located in a circle");
+        }
     }
 }
